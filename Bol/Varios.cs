@@ -6,25 +6,24 @@ using System.Threading.Tasks;
 
 namespace Bol
 {
-    public class Bebida : Producto
+    public class Varios : Producto
     {
         #region " Atributes "
         #endregion
 
         #region " Properties "
 
-        public int TipoBebidaId { get; set; }
+        public int TipoArticuloId { get; set; }
 
-        public TipoBebida TipoBebida
+        public TipoArticulo TipoArticulo
         {
             get
             {
-                return Bol.TipoBebida.GetById(TipoBebidaId);
+                return Bol.TipoArticulo.GetById(TipoArticuloId);
             }
         }
 
         #endregion
-
 
         #region " Fill "
         #endregion

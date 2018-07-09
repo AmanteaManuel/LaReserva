@@ -15,6 +15,7 @@ namespace Bol
         private double _costo;
         private double _valor;
         private string _descripcion;
+        private int _provedorId;
 
 
         #endregion
@@ -22,6 +23,8 @@ namespace Bol
         #region " Properties "
 
         public int Id { get; set; }
+
+        public int ProvedorId { get; set; }
 
         /// <summary>
         /// Stock del Producto
@@ -33,23 +36,31 @@ namespace Bol
         /// </summary>
         public double Costo { get; set; }
 
-
         /// <summary>
         /// Costo al cliente del producto
         /// </summary>
-        public double Valor { get; set; }
+        public double Precio { get; set; }
 
         /// <summary>
         /// Nombre del producto
         /// </summary>
         public string Descripcion { get; set; }
 
+        public Provedor Provedor
+        {
+            get
+            {                
+                return Bol.Provedor.GetById(ProvedorId);
+            }
+        }
+
         #endregion
 
         #region " Fill "
         #endregion
 
-        #region " View "
+        #region " View "        
+
         #endregion
 
     }

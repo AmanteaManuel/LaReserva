@@ -6,25 +6,26 @@ using System.Threading.Tasks;
 
 namespace Bol
 {
-    public class Bebida : Producto
+    public class Picada
     {
         #region " Atributes "
         #endregion
 
         #region " Properties "
 
-        public int TipoBebidaId { get; set; }
+        public int Id { get; set; }
 
-        public TipoBebida TipoBebida
-        {
-            get
-            {
-                return Bol.TipoBebida.GetById(TipoBebidaId);
-            }
-        }
+        public double Precio { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public int Fetas { get; set; }
+
+        public double Costo { get; set; }
+
+        public string Nombre { get; set; }
 
         #endregion
-
 
         #region " Fill "
         #endregion

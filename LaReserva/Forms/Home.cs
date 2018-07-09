@@ -15,6 +15,7 @@ namespace LaReserva.Forms
         public Home()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void Home_Load(object sender, EventArgs e)
